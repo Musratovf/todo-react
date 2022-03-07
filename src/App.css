@@ -13,6 +13,7 @@ body {
     margin-top: 50px !important;
     max-width: 500px;
     margin: 0 auto;
+    padding: 15px;
 }
 
 .header {
@@ -111,7 +112,10 @@ body {
     border: 1px solid rgba(119, 119, 119, 0.3);
     margin: 0;
 }
-
+.item__inpout {
+    padding: 0;
+    list-style: none;
+}
 .checkmark:after {
     content: "";
     position: absolute;
@@ -145,10 +149,38 @@ body {
     border: 1px solid #F5F5F5;
     background-color: transparent;
 }
-.buttons__flex {
 
-}
 .btn__clear {
     border: none;
     background-color: transparent;
+}
+.btn-delete {
+    position: absolute;
+    right: 2%;
+    background-color: transparent ;
+    border: none;
+    font-size: 30px;
+    color: indianred;
+    display: none;
+}
+.todolist {
+    padding: 0;
+}
+.wrap-item {
+    padding: 10px;
+    border-top: 1px solid #777777;
+}
+.todos-items {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    font-size: 20px;
+}
+.todos-items:hover > .btn-delete {
+    display: block;
+}
+.input-check {
+    width: 20px;
+    height: 20px;
+    margin-right: 30px;
 }
