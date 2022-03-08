@@ -16,7 +16,6 @@ function TodoList() {
 
         foundTodo.isComplited = !foundTodo.isComplited
         setTodos([...todos])
-        
     }
 
     const [todos, setTodos] = React.useState([
@@ -37,15 +36,13 @@ function TodoList() {
             <li className="item__inpout">
                 <input onKeyUp={(evt) => {
                     evt.preventDefault()
-                    if(evt.target.value = null) {
-                        alert("jdvcn")
-                   }
                     if (evt.code === 'Enter') {
                         const InputNewValue = {
                             id: todos[todos.length - 1]?.id + 1 || 0,
                             text: evt.target.value.trim(),
                             isComplited: false,
                         }
+                        
                         
                         setTodos([...todos, InputNewValue])
                         evt.target.value = null

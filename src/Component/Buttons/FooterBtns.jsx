@@ -5,7 +5,7 @@ function FooterBtn({footer, active, Completed}) {
     return (
         <>
         <div className="footer__wrap">
-        <p className="foter-text">items left</p>
+        <p className="foter-text">{}items left</p>
         <div className="buttons__flex">
         <button className="footer__btn">{footer}</button>
         <button className="footer__btn">{active}</button>
