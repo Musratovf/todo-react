@@ -11,7 +11,7 @@ body {
 
 .wrapper__all {
     margin-top: 50px !important;
-    max-width: 500px;
+    max-width: 600px;
     margin: 0 auto;
     padding: 15px;
 }
@@ -74,7 +74,7 @@ body {
     margin: 0;
 }
 .footer__btn {
-    border: 1px solid #e0e0e0;
+    border: 1px solid #b1b1b1;
     margin: 0 7px 0 7px;
     border-radius: 4px;
     background-color: transparent;
@@ -97,6 +97,7 @@ body {
     padding: 0;
 }
 .wrap-item {
+    list-style: none;
     padding: 10px;
     border-bottom: 1px solid #777777;
 }
@@ -118,6 +119,17 @@ body {
 .input-check:checked {
     color: red;
     background-color: red;
+}
+.buttons__flex {
+    display: flex;
+    align-items: center;
+    width: 85%;
+}
+.btn__clear {
+    display: none;
+}
+.buttons__flex:hover > .btn__clear {
+    display: block;
 }
 /* @media only screen and (max-width: 440px) {
     .footer__btn {
